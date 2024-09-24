@@ -1,0 +1,11 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "cosmic_age"
+	group: "126B455AC68B2B8F"
+	id: "59F557A62AAC6557"
+	order_index: 3
+	quest_links: [ ]
+	quests: [ ]
+	title: "Cosmic Age"
+}

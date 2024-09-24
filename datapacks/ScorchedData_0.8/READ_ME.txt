@@ -1,0 +1,1 @@
+Heres a datapack file. To alter recipes, go into recipes, and find the recipe you wanna change. For the guns, open the gun folder, and find the weapon you wanna adjust and open the file in a text editor, edit the stat and save. Place in your Minecraft worlds datapack folder

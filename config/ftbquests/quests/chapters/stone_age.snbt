@@ -1,0 +1,244 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "stone_age"
+	group: "126B455AC68B2B8F"
+	id: "1448D80BCB90F344"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "minecraft:oak_log"
+			id: "5A2828EB93A94E25"
+			ignore_reward_blocking: true
+			rewards: [{
+				id: "5C6F52A63925244E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				consume_items: false
+				count: 6L
+				id: "31B1EF3AFFCBF002"
+				item: {
+					Count: 1
+					id: "minecraft:oak_log"
+					tag: {
+						"'#minecraft:logs'": { }
+					}
+				}
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Getting Started"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A2828EB93A94E25"]
+			id: "5EF88A3D6E447DF2"
+			ignore_reward_blocking: true
+			require_sequential_tasks: true
+			rewards: [{
+				id: "6BAB0280B511E09B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "11029A7CBCD46AC8"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "Time to craft"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EF88A3D6E447DF2"]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0167D1AD2678B18C"
+			ignore_reward_blocking: true
+			rewards: [
+				{
+					count: 4
+					id: "7C14952CFAA8D47E"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "2F0C85918FF8CA00"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "6CD3277F1B995422"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7F87AB5268E8E64F"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "68DB012DD5023527"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "209C6E78057A66D8"
+					item: {
+						Count: 1
+						id: "minecraft:wooden_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "First Tools"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0167D1AD2678B18C"]
+			id: "3CB395806AE0294B"
+			ignore_reward_blocking: true
+			tasks: [{
+				count: 9L
+				id: "56487F6D5B06E51E"
+				item: { Count: 9, id: "minecraft:cobblestone" }
+				type: "item"
+			}]
+			title: "Stone Age"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["3CB395806AE0294B"]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "003D75E075C30CFF"
+			ignore_reward_blocking: true
+			tasks: [
+				{
+					id: "342CA43148463164"
+					item: {
+						Count: 1
+						id: "minecraft:stone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5C6A75163257CAB3"
+					item: {
+						Count: 1
+						id: "minecraft:stone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "436DEC17C2BF3EF1"
+					item: {
+						Count: 1
+						id: "minecraft:stone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FC29578751484B0"
+					item: {
+						Count: 1
+						id: "minecraft:stone_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Better Tools"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0167D1AD2678B18C"]
+			id: "1653613EA41C2160"
+			tasks: [{
+				count: 2L
+				id: "2B9541E99408EB3F"
+				item: { Count: 2, id: "minecraft:andesite" }
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["003D75E075C30CFF"]
+			id: "5442AF85A7E61F82"
+			tasks: [{
+				id: "2CDAE8D9862F161F"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"5442AF85A7E61F82"
+				"1653613EA41C2160"
+			]
+			id: "56D811A80B000D9A"
+			tasks: [{
+				id: "71EC43FD1B0AA140"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+	]
+	title: "Stone Age"
+}

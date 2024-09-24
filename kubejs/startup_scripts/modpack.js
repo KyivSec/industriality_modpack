@@ -11,7 +11,6 @@ const Mods = [
     Platform.mods.simpleplanes,
     Platform.mods.computercraft,
     Platform.mods.sculkhorde,
-    Platform.mods.vintageimprovements,
     Platform.mods.create_enchantment_industry
 ];
 
